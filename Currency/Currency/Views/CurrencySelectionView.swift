@@ -18,6 +18,10 @@ struct CurrencySelectionView: View {
             List(currencies){ currency in
                 ListItem(currency: currency, selectedCurrency: self.$selectedCurrency)
                     .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                    .onTapGesture {
+                        self.selectedCurrency = currency
+                        self.showSelectionView = false
+                    }
             }
         .navigationBarTitle("Select Currency")
         }
@@ -45,9 +49,6 @@ struct ListItem: View {
                 Image(systemName: "checkmark")
                 .foregroundColor(.blue)
             }
-        }
-        .onTapGesture {
-            self.selectedCurrency = self.currency
         }
     }
 }

@@ -9,7 +9,7 @@
 import SwiftUI
 import Combine
 
-struct ContentView: View {
+struct MainView: View {
     @ObservedObject var viewModel = ContentViewModel()
     @State var showSelectionView = false
     
@@ -27,12 +27,7 @@ struct ContentView: View {
                 })
                 .padding()
             }
-            List(viewModel.currencies){ currency in
-                VStack(alignment: .leading){
-                    Text(currency.name)
-                    Text(String(format: "%.2f", currency.calculatedValue(insertedValue: self.viewModel.amount, selectedCurrencyValue: self.viewModel.selectedCurrency?.value)))
-                }
-            }
+            GridView(currencies: self.$viewModel.gridCurrencies, amount: self.$viewModel.amount, selected: self.$viewModel.selectedCurrency)
         }
         .sheet(isPresented: $showSelectionView, content: {
             CurrencySelectionView(showSelectionView: self.$showSelectionView, currencies: self.viewModel.currencies, selectedCurrency: self.$viewModel.selectedCurrency)
@@ -43,3 +38,7 @@ struct ContentView: View {
         }
     }
 }
+
+
+
+

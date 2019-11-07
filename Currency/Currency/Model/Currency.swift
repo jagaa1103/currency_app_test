@@ -21,6 +21,6 @@ struct Currency: Identifiable, Hashable {
         }else{
             return value
         }
-    }
+    }    
 }
 

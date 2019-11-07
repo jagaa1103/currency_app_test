@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3507256B2373A4C0005C58BA /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3507256A2373A4C0005C58BA /* CacheManager.swift */; };
 		35078BB1236BFF800016B4A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35078BB0236BFF800016B4A1 /* AppDelegate.swift */; };
 		35078BB3236BFF800016B4A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35078BB2236BFF800016B4A1 /* SceneDelegate.swift */; };
 		35078BB5236BFF800016B4A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35078BB4236BFF800016B4A1 /* ContentView.swift */; };
@@ -18,7 +19,7 @@
 		351910BC23702B7B007624BF /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351910BB23702B7B007624BF /* ContentViewModel.swift */; };
 		351910BE23711755007624BF /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351910BD23711755007624BF /* Result.swift */; };
 		3524641C23714FEC00FE5AB8 /* CurrencySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3524641B23714FEC00FE5AB8 /* CurrencySelectionView.swift */; };
-		352DDFFB236FB163005A1C02 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352DDFFA236FB163005A1C02 /* CellView.swift */; };
+		352464222372AD9300FE5AB8 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352464212372AD9300FE5AB8 /* GridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3507256A2373A4C0005C58BA /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		35078BAD236BFF800016B4A1 /* Currency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Currency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35078BB0236BFF800016B4A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35078BB2236BFF800016B4A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,7 +49,7 @@
 		351910BB23702B7B007624BF /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		351910BD23711755007624BF /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		3524641B23714FEC00FE5AB8 /* CurrencySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelectionView.swift; sourceTree = "<group>"; };
-		352DDFFA236FB163005A1C02 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		352464212372AD9300FE5AB8 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		350725692373A4AD005C58BA /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3507256A2373A4C0005C58BA /* CacheManager.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		35078BA4236BFF800016B4A1 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +99,7 @@
 		35078BAF236BFF800016B4A1 /* Currency */ = {
 			isa = PBXGroup;
 			children = (
+				350725692373A4AD005C58BA /* Helper */,
 				351910BA23702B5E007624BF /* ViewModel */,
 				352DDFFC236FB210005A1C02 /* Views */,
 				35078BD4236C01780016B4A1 /* Model */,
@@ -140,8 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				35078BB4236BFF800016B4A1 /* ContentView.swift */,
-				352DDFFA236FB163005A1C02 /* CellView.swift */,
 				3524641B23714FEC00FE5AB8 /* CurrencySelectionView.swift */,
+				352464212372AD9300FE5AB8 /* GridView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -248,12 +259,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				35078BB1236BFF800016B4A1 /* AppDelegate.swift in Sources */,
+				3507256B2373A4C0005C58BA /* CacheManager.swift in Sources */,
 				35078BD6236C018B0016B4A1 /* Currency.swift in Sources */,
 				351910BE23711755007624BF /* Result.swift in Sources */,
-				352DDFFB236FB163005A1C02 /* CellView.swift in Sources */,
 				3524641C23714FEC00FE5AB8 /* CurrencySelectionView.swift in Sources */,
 				351910BC23702B7B007624BF /* ContentViewModel.swift in Sources */,
 				35078BB3236BFF800016B4A1 /* SceneDelegate.swift in Sources */,
+				352464222372AD9300FE5AB8 /* GridView.swift in Sources */,
 				35078BB5236BFF800016B4A1 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
